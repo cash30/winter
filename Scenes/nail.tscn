@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://cur3o0msomnfv"]
+
+[ext_resource type="Script" uid="uid://b8b6dxxej0ih4" path="res://Scripts/nail.gd" id="1_4dspx"]
+[ext_resource type="Texture2D" uid="uid://dasfa07meakvo" path="res://Art/Nail.png" id="2_hy84x"]
+[ext_resource type="AudioStream" uid="uid://pfndttbviowo" path="res://Music/coin.mp3" id="3_hy84x"]
+
+[node name="nail" type="Node2D"]
+rotation = 0.7853982
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_4dspx")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-6, -8, -6, -6, -5, -5, -2, -5, -2, 6, -1, 8, 1, 8, 2, 6, 2, -5, 5, -5, 6, -6, 6, -8)
+
+[node name="Nail" type="Sprite2D" parent="."]
+texture = ExtResource("2_hy84x")
+
+[node name="sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_hy84x")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

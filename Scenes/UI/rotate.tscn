@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cp32rfoo45xt"]
+
+[ext_resource type="Script" uid="uid://b1le1176koumw" path="res://Scripts/UI/titleScreenPlayerRotate.gd" id="1_8efe4"]
+[ext_resource type="Texture2D" uid="uid://c3dqfuxct7t4v" path="res://Art/player_files/player.png" id="2_xycja"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_8efe4")
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(0, -15)
+texture = ExtResource("2_xycja")

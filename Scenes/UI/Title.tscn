@@ -1,0 +1,88 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0b3jc6wwwt4b"]
+
+[ext_resource type="Theme" uid="uid://yaj5a0o3nqh3" path="res://Themes/ButtonTheme.tres" id="1_ocyjd"]
+[ext_resource type="Script" uid="uid://cf0o6kw8e8ewt" path="res://Scripts/UI/Buttons/playButton.gd" id="2_b4gak"]
+[ext_resource type="Script" uid="uid://dakvhyalldgwu" path="res://Scripts/UI/Buttons/howButton.gd" id="3_iubqq"]
+[ext_resource type="PackedScene" uid="uid://cp32rfoo45xt" path="res://Scenes/UI/rotate.tscn" id="5_gyje7"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.897248, 0.430645, 0.218927, 1)
+
+[node name="Play" type="Button" parent="."]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.282
+anchor_top = 0.17284
+anchor_right = 0.716146
+anchor_bottom = 0.387
+offset_left = 0.135986
+offset_bottom = 0.223953
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_ocyjd")
+text = "Play"
+script = ExtResource("2_b4gak")
+metadata/_edit_use_anchors_ = true
+
+[node name="how" type="Button" parent="."]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.283
+anchor_top = 0.6
+anchor_right = 0.717
+anchor_bottom = 0.815
+offset_left = -0.0160217
+offset_top = 0.199982
+offset_right = 0.0159912
+offset_bottom = -0.120056
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("1_ocyjd")
+text = "How?
+"
+script = ExtResource("3_iubqq")
+
+[node name="Settings (UNUSED)" type="Button" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.135
+anchor_top = 0.227
+anchor_right = 0.5
+anchor_bottom = 0.437
+offset_left = -97.52
+offset_top = -1.09601
+offset_right = -93.0
+offset_bottom = -1.17599
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ocyjd")
+text = "Settings"
+
+[node name="Node2D" parent="." instance=ExtResource("5_gyje7")]
+position = Vector2(174, 609)
+scale = Vector2(18.065, 18.065)
+
+[connection signal="mouse_entered" from="Play" to="Play" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Play" to="Play" method="_on_mouse_exited"]
+[connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
+[connection signal="pressed" from="Play" to="Node2D" method="_on_play_pressed"]
+[connection signal="mouse_entered" from="how" to="Play" method="_on_how_mouse_entered"]
+[connection signal="mouse_exited" from="how" to="Play" method="_on_how_mouse_exited"]
+[connection signal="pressed" from="how" to="how" method="_on_pressed"]
