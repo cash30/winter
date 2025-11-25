@@ -1,8 +1,3 @@
-res://Scripts/UI/Buttons/levelSelect.gd
-res://Scenes/UI/Title.tscn
-res://Scripts/UI/Buttons/playButton.gd
-res://Scenes/UI/levelSelect.tscn
-res://Scripts/UI/titleScreenPlayerRotate.gd
-res://Scenes/Globals/Globals.tscn
-res://Scripts/Globals.gd
 res://Scenes/Globals/music.gd
+res://Scripts/Globals.gd
+res://Scenes/levels/winterTestLevel.tscn

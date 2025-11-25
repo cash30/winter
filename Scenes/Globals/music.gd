@@ -1,13 +1,16 @@
 extends AudioStreamPlayer
 var isMusicPlaying = false
 @onready var music_timer = Timer.new()
-
+var currentMode = "framework"
 
 func _ready() -> void:
 	if Globals.gameMode == "framework":
 		stream = load("res://Music/Main theme.mp3")
+		currentMode = "framework"
 	elif Globals.gameMode == "winter":
-		stream = null #TODO: make this the winter music file
+		stream = load("res://Music/winterMusic.mp3")
+		currentMode = "framework"
+
 	add_child(music_timer)
 	music_timer.wait_time = 65.0 
 	music_timer.one_shot = false
@@ -15,6 +18,19 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
+	if Globals.gameMode == "framework" and currentMode != "framework":
+		stream = load("res://Music/Main theme.mp3")
+		print("changing music to framework")
+		currentMode = "framework"
+		play()
+	elif Globals.gameMode == "winter" and currentMode != "winter":
+		stream = load("res://Music/winterMusic.mp3")
+		currentMode = "winter"
+		music_timer.wait_time = 149.0 #TODO
+		print("changing music to winter")
+		play()
+
+		
 	if Globals.shouldMusicBePlaying and !isMusicPlaying:
 		play()
 		print("starting music")

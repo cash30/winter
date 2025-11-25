@@ -41,6 +41,7 @@ color = Color(0.7886001, 0.74398005, 0.77106225, 1)
 position = Vector2(314.00006, 398.00003)
 scale = Vector2(10, 10)
 texture = ExtResource("2_cc2ec")
+flip_h = true
 
 [node name="1" type="Button" parent="."]
 layout_mode = 1

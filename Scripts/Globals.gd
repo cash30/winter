@@ -9,6 +9,7 @@ var levelSelectScene : PackedScene =load("res://Scenes/UI/levelSelect.tscn")
 var level1           : PackedScene = load("res://Scenes/levels/level1.tscn")
 var level2           : PackedScene = load("res://Scenes/levels/level2.tscn")
 var lastLevel        : PackedScene = load("res://Scenes/levels/lastLevel.tscn")
+var winterTestLevel  : PackedScene = load("res://Scenes/levels/winterTestLevel.tscn")
 
 var shouldMusicBePlaying = false
 var shouldClink = false
@@ -18,7 +19,7 @@ var isHoveringOverPlay = false
 var didStart = false
 var nailsCollected = 0
 
-var gameMode = "framework" #could be "winter", deturmins music and related things
+var gameMode = "framework" #could be "winter" or "framework", deturmins music and related things
 
 func _ready() -> void:
 	
@@ -42,9 +43,11 @@ func nextLevel():
 	print("moving to next level - Globals.gd")
 	if onScene == level1:
 		changeScene(level2)
+		gameMode = "framework"
 		#
 	elif onScene == level2:
-		changeScene(lastLevel)
+		changeScene(winterTestLevel)
+		gameMode = "winter"
 		#
 	#if onScene == level3:
 		#changeScene(level4)
