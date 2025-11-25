@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cjskb0b147c3o"]
+[gd_scene load_steps=5 format=3 uid="uid://cjskb0b147c3o"]
 
 [ext_resource type="Script" uid="uid://b0r7ml1usvqxu" path="res://Scripts/Globals.gd" id="1_gdvbi"]
-[ext_resource type="AudioStream" path="res://Music/Main theme.ogg" id="2_nt083"]
 [ext_resource type="Script" uid="uid://di6gwrtosu070" path="res://Scenes/Globals/music.gd" id="3_7016x"]
 [ext_resource type="Script" uid="uid://05j0ah7ukuu7" path="res://Scripts/UI/sound/clink.gd" id="4_7016x"]
 [ext_resource type="AudioStream" uid="uid://cloblulsqobeo" path="res://Music/clink.mp3" id="4_nt083"]
@@ -16,9 +15,7 @@ grow_vertical = 2
 script = ExtResource("1_gdvbi")
 
 [node name="music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_nt083")
 autoplay = true
-parameters/looping = true
 script = ExtResource("3_7016x")
 
 [node name="clink" type="AudioStreamPlayer" parent="."]

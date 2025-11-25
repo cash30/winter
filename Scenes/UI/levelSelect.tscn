@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://bbfnkchw65oc"]
+[gd_scene load_steps=4 format=3 uid="uid://bbfnkchw65oc"]
+
+[ext_resource type="Texture2D" uid="uid://c3dqfuxct7t4v" path="res://Art/player_files/player.png" id="1_h4l75"]
+[ext_resource type="Texture2D" uid="uid://b7lclu54h57u8" path="res://Art/player_files/santa.png" id="2_cc2ec"]
+[ext_resource type="Script" uid="uid://wavqdjomfqrh" path="res://Scripts/UI/Buttons/menuButton.gd" id="3_cc2ec"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -8,16 +12,22 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="orange" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -576.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.897248, 0.430645, 0.218927, 1)
 
-[node name="ColorRect2" type="ColorRect" parent="."]
+[node name="Player" type="Sprite2D" parent="orange"]
+position = Vector2(288.00003, 416.00003)
+scale = Vector2(10, 10)
+texture = ExtResource("1_h4l75")
+
+[node name="grey" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -26,6 +36,11 @@ offset_left = 576.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.7886001, 0.74398005, 0.77106225, 1)
+
+[node name="Santa" type="Sprite2D" parent="grey"]
+position = Vector2(314.00006, 398.00003)
+scale = Vector2(10, 10)
+texture = ExtResource("2_cc2ec")
 
 [node name="1" type="Button" parent="."]
 layout_mode = 1
@@ -74,3 +89,16 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "4"
 metadata/_edit_use_anchors_ = true
+
+[node name="meniu" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0234375
+anchor_top = 0.83641976
+anchor_right = 0.18836778
+anchor_bottom = 0.9598762
+text = "Menu"
+script = ExtResource("3_cc2ec")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="meniu" to="meniu" method="_on_pressed"]

@@ -4,7 +4,8 @@ var isMusicPlaying = false
 
 
 func _ready() -> void:
-	stream = load("res://Music/Main theme.mp3")
+	if Globals.gameMode = "framework"
+		stream = load("res://Music/Main theme.mp3")
 	add_child(music_timer)
 	music_timer.wait_time = 65.0 
 	music_timer.one_shot = false

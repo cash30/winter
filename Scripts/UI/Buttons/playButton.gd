@@ -14,19 +14,28 @@ func _on_pressed() -> void:
 	Globals.shouldClink = true
 	
 	
-func _on_mouse_entered() -> void:
-	Globals.isHoveringOverPlay = true
-
-
-
-func _on_mouse_exited() -> void:
-	Globals.isHoveringOverPlay = false
-
-
-func _on_how_mouse_entered() -> void:
-	Globals.isHoveringOverPlay = true
-
-
-
-func _on_how_mouse_exited() -> void:
-	Globals.isHoveringOverPlay = false
+#func _on_mouse_entered() -> void:
+	#Globals.isHoveringOverPlay = true
+#
+#
+#
+#func _on_mouse_exited() -> void:
+	#Globals.isHoveringOverPlay = false
+#
+#
+#func _on_how_mouse_entered() -> void:
+	#Globals.isHoveringOverPlay = true
+#
+#
+#
+#func _on_how_mouse_exited() -> void:
+	#Globals.isHoveringOverPlay = false
+#
+#
+#func _on_level_select_mouse_exited() -> void:
+	#Globals.isHoveringOverPlay = false
+#
+#
+#
+#func _on_level_select_mouse_entered() -> void:
+	#Globals.isHoveringOverPlay = true

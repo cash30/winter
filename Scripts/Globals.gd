@@ -1,12 +1,14 @@
 extends Control
-var onScene    : PackedScene = load("res://Scenes/UI/Title.tscn")
-var titleScene : PackedScene = load("res://Scenes/UI/Title.tscn")
-var howScene   : PackedScene = load("res://Scenes/UI/how.tscn")
-var pauseScene : PackedScene = load("res://Scenes/UI/pause.tscn")
+var onScene          : PackedScene = load("res://Scenes/UI/Title.tscn")
 
-var level1     : PackedScene = load("res://Scenes/levels/level1.tscn")
-var level2     : PackedScene = load("res://Scenes/levels/level2.tscn")
-var lastLevel  : PackedScene = load("res://Scenes/levels/lastLevel.tscn")
+var titleScene       : PackedScene = load("res://Scenes/UI/Title.tscn")
+var howScene         : PackedScene = load("res://Scenes/UI/how.tscn")
+var pauseScene       : PackedScene = load("res://Scenes/UI/pause.tscn")
+var levelSelectScene : PackedScene =load("res://Scenes/UI/levelSelect.tscn")
+
+var level1           : PackedScene = load("res://Scenes/levels/level1.tscn")
+var level2           : PackedScene = load("res://Scenes/levels/level2.tscn")
+var lastLevel        : PackedScene = load("res://Scenes/levels/lastLevel.tscn")
 
 var shouldMusicBePlaying = false
 var shouldClink = false
@@ -15,6 +17,8 @@ var shouldClink = false
 var isHoveringOverPlay = false
 var didStart = false
 var nailsCollected = 0
+
+var gameMode = "framework" #could be "winter", deturmins music and related things
 
 func _ready() -> void:
 	
