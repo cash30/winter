@@ -1,9 +1,76 @@
 [gd_scene format=3 uid="uid://bbfnkchw65oc"]
 
-[node name="Node2D" type="Control"]
+[node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 color = Color(0.897248, 0.430645, 0.218927, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 576.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.7886001, 0.74398005, 0.77106225, 1)
+
+[node name="1" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.052083332
+anchor_top = 0.024691358
+anchor_right = 0.23177083
+anchor_bottom = 0.26851854
+grow_horizontal = 2
+grow_vertical = 2
+text = "1"
+metadata/_edit_use_anchors_ = true
+
+[node name="2" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.28125
+anchor_top = 0.023148147
+anchor_right = 0.4609375
+anchor_bottom = 0.26697534
+grow_horizontal = 2
+grow_vertical = 2
+text = "2"
+metadata/_edit_use_anchors_ = true
+
+[node name="3" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5338542
+anchor_top = 0.023148147
+anchor_right = 0.7135417
+anchor_bottom = 0.26697534
+grow_horizontal = 2
+grow_vertical = 2
+text = "3"
+metadata/_edit_use_anchors_ = true
+
+[node name="4" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7690972
+anchor_top = 0.023148147
+anchor_right = 0.9487847
+anchor_bottom = 0.26697534
+grow_horizontal = 2
+grow_vertical = 2
+text = "4"
+metadata/_edit_use_anchors_ = true

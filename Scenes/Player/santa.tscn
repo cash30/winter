@@ -1,0 +1,131 @@
+[gd_scene load_steps=13 format=3 uid="uid://g44srrpah2wy"]
+
+[ext_resource type="Script" uid="uid://bmedk7apojwu4" path="res://Scripts/Player/player.gd" id="1_arek5"]
+[ext_resource type="Script" uid="uid://knumqbmhvl4d" path="res://Scenes/Player/playerAnimator.gd" id="2_pa4yq"]
+[ext_resource type="Texture2D" uid="uid://bvryoaorhtal4" path="res://Art/player_files/santa frames.png" id="3_ayatt"]
+[ext_resource type="Script" uid="uid://cqhkgj5hyx7ca" path="res://Scenes/Player/camera.gd" id="4_h53ec"]
+[ext_resource type="Texture2D" uid="uid://b3locsbqy51lc" path="res://Art/sun.png" id="5_rlqqh"]
+
+[sub_resource type="Animation" id="Animation_jlvik"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 32, 32, 32)]
+}
+
+[sub_resource type="Animation" id="Animation_mtuoh"]
+resource_name = "idle"
+length = 4.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5, 2, 2.1, 2.2, 2.5, 3, 3.5, 4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(0, 32, 32, 32), Rect2(32, 32, 32, 32), Rect2(0, 32, 32, 32), Rect2(32, 32, 32, 32), Rect2(0, 32, 32, 32), Rect2(64, 32, 32, 32), Rect2(0, 32, 32, 32), Rect2(32, 32, 32, 32), Rect2(0, 32, 32, 32), Rect2(32, 32, 32, 32), Rect2(0, 32, 32, 32)]
+}
+
+[sub_resource type="Animation" id="Animation_htcer"]
+resource_name = "jump"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 64, 32, 32)]
+}
+
+[sub_resource type="Animation" id="Animation_xpcdj"]
+resource_name = "run"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("sprite:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 32, 32), Rect2(64, 0, 32, 32)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jhyir"]
+_data = {
+&"RESET": SubResource("Animation_jlvik"),
+&"idle": SubResource("Animation_mtuoh"),
+&"jump": SubResource("Animation_htcer"),
+&"run": SubResource("Animation_xpcdj")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b2ubc"]
+radius = 6.0
+height = 20.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_x7y6o"]
+radius = 4.0
+height = 18.0
+
+[node name="player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_arek5")
+
+[node name="animator" type="Node2D" parent="." node_paths=PackedStringArray("playerController", "animationPlayer", "sprite")]
+scale = Vector2(0.1, 0.1)
+script = ExtResource("2_pa4yq")
+playerController = NodePath("..")
+animationPlayer = NodePath("AnimationPlayer")
+sprite = NodePath("sprite")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="animator"]
+libraries = {
+&"": SubResource("AnimationLibrary_jhyir")
+}
+autoplay = "idle"
+
+[node name="sprite" type="Sprite2D" parent="animator"]
+scale = Vector2(6, 6)
+texture = ExtResource("3_ayatt")
+region_enabled = true
+region_rect = Rect2(0, 32, 32, 32)
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("playerController")]
+scale = Vector2(0.1, 0.1)
+zoom = Vector2(10, 10)
+script = ExtResource("4_h53ec")
+playerController = NodePath("..")
+
+[node name="CollisionPolygon2D2" type="CollisionShape2D" parent="." groups=["player"]]
+position = Vector2(2, 0)
+shape = SubResource("CapsuleShape2D_b2ubc")
+
+[node name="Sun" type="Sprite2D" parent="."]
+visible = false
+z_index = -3
+position = Vector2(124.99999, -65)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_rlqqh")
+
+[node name="CollisionPolygon2D3" type="CollisionShape2D" parent="." groups=["player"]]
+position = Vector2(0, -1)
+rotation = 1.5707964
+shape = SubResource("CapsuleShape2D_x7y6o")
