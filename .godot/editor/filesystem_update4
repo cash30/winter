@@ -1,5 +1,4 @@
-res://Scenes/levels/lastLevel.tscn
-res://Scenes/levels/winterTestLevel.tscn
-res://Scenes/goals/tree.tscn
-res://Scenes/goals/toolbox.tscn
-res://Scenes/collectable/hotCoco.tscn
+res://Scripts/UI/Buttons/playButton.gd
+res://Scenes/UI/levelSelect.tscn
+res://Scenes/Globals/Globals.tscn
+res://Scripts/Globals.gd

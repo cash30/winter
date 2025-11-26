@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bbfnkchw65oc"]
+[gd_scene load_steps=5 format=3 uid="uid://bbfnkchw65oc"]
 
 [ext_resource type="Texture2D" uid="uid://c3dqfuxct7t4v" path="res://Art/player_files/player.png" id="1_h4l75"]
 [ext_resource type="Texture2D" uid="uid://b7lclu54h57u8" path="res://Art/player_files/santa.png" id="2_cc2ec"]
 [ext_resource type="Script" uid="uid://wavqdjomfqrh" path="res://Scripts/UI/Buttons/menuButton.gd" id="3_cc2ec"]
+[ext_resource type="Script" uid="uid://cf0o6kw8e8ewt" path="res://Scripts/UI/Buttons/playButton.gd" id="3_fff33"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -53,6 +54,7 @@ anchor_bottom = 0.26851854
 grow_horizontal = 2
 grow_vertical = 2
 text = "1"
+script = ExtResource("3_fff33")
 metadata/_edit_use_anchors_ = true
 
 [node name="2" type="Button" parent="."]
@@ -102,4 +104,8 @@ text = "Menu"
 script = ExtResource("3_cc2ec")
 metadata/_edit_use_anchors_ = true
 
+[connection signal="pressed" from="1" to="1" method="_on_pressed"]
+[connection signal="pressed" from="2" to="1" method="_on_2_pressed"]
+[connection signal="pressed" from="3" to="1" method="_on_3_pressed"]
+[connection signal="pressed" from="4" to="1" method="_on_4_pressed"]
 [connection signal="pressed" from="meniu" to="meniu" method="_on_pressed"]

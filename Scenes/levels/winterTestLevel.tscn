@@ -254,11 +254,11 @@ visible = false
 position = Vector2(126, -193)
 
 [node name="explore" type="Label" parent="."]
-z_index = -1
-offset_left = 14.000004
-offset_top = 14.999996
-offset_right = 4947.0
-offset_bottom = 330.0
+z_index = 1
+offset_left = 92.0
+offset_top = 27.0
+offset_right = 5025.0
+offset_bottom = 342.0
 scale = Vector2(0.03, 0.03)
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 231
@@ -277,13 +277,13 @@ script = ExtResource("3_y0kfx")
 [node name="player" parent="." instance=ExtResource("4_bj5b1")]
 position = Vector2(80, -56)
 
-[node name="nail" parent="." instance=ExtResource("6_y0kfx")]
+[node name="coco" parent="." instance=ExtResource("6_y0kfx")]
 position = Vector2(167, 1)
 
-[node name="nail2" parent="." instance=ExtResource("6_y0kfx")]
+[node name="coco2" parent="." instance=ExtResource("6_y0kfx")]
 position = Vector2(198, 1)
 
-[node name="nail3" parent="." instance=ExtResource("6_y0kfx")]
+[node name="coco3" parent="." instance=ExtResource("6_y0kfx")]
 position = Vector2(214, 1)
 
 [node name="Node2D" parent="." instance=ExtResource("7_bj5b1")]
