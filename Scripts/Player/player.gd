@@ -11,13 +11,18 @@ func _physics_process(delta: float) -> void:
 		Globals.respawn()
 	
 	# Add the gravity.
-	if not is_on_floor():
+	if not is_on_floor() and !Input.is_action_pressed("down"):
 		velocity += get_gravity() * delta
 
 	# Handle jump.
 	if Input.is_action_pressed("up") and is_on_floor():
 		velocity.y = jumpPower
+	if Input.is_action_pressed("down"):
+		set_collision_mask_value(3, false)
+	else:
+		set_collision_mask_value(3, true)
 
+		
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	if Input.is_action_pressed("right"):
@@ -31,3 +36,4 @@ func _physics_process(delta: float) -> void:
 		velocity.x = 0
 
 	move_and_slide()
+	

@@ -1,7 +1,10 @@
-res://Scripts/UI/Buttons/playButton.gd
-res://Scenes/UI/levelSelect.tscn
-res://Scenes/Globals/Globals.tscn
-res://Scripts/Globals.gd
-res://Scenes/levels/level_3.tscn
-res://Scenes/Player/santa.tscn
+res://Scenes/levels/winterTestLevel.tscn
 res://Scripts/Player/player.gd
+res://Scenes/levels/lastLevel.tscn
+res://Scenes/levels/level1.tscn
+res://Scenes/Player/player.tscn
+res://Scenes/levels/winterTestLevel.tres
+res://Scenes/levels/level2.tscn
+res://Scenes/levels/level_3.tscn
+res://Scenes/goals/tree.tscn
+res://Scenes/Player/santa.tscn

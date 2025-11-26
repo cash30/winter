@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://bv08kdu8uu2xx"]
 
-[ext_resource type="Script" uid="uid://dyq7116knxy18" path="res://Scripts/toolbox.gd" id="1_up8qv"]
+[ext_resource type="Script" uid="uid://dyq7116knxy18" path="res://Scripts/goal.gd" id="1_up8qv"]
 [ext_resource type="Texture2D" uid="uid://1y52jd42xl7w" path="res://Art/toolbox.png" id="2_jieyh"]
 [ext_resource type="Texture2D" uid="uid://cd4j0hx5qr76f" path="res://Art/open-toolbox.png" id="3_t8fum"]
-[ext_resource type="Script" uid="uid://s3aoxb2n6eul" path="res://Scripts/open_toolbox.gd" id="4_q5d8y"]
+[ext_resource type="Script" uid="uid://s3aoxb2n6eul" path="res://Scripts/endGoalDisplay.gd" id="4_q5d8y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8fum"]
 size = Vector2(29, 17.5)
