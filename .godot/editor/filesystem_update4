@@ -2,3 +2,6 @@ res://Scripts/UI/Buttons/playButton.gd
 res://Scenes/UI/levelSelect.tscn
 res://Scenes/Globals/Globals.tscn
 res://Scripts/Globals.gd
+res://Scenes/levels/level_3.tscn
+res://Scenes/Player/santa.tscn
+res://Scripts/Player/player.gd

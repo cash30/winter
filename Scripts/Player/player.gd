@@ -7,6 +7,9 @@ const jumpPower = -200.0
 @export var zoom = 3
 
 func _physics_process(delta: float) -> void:
+	if position.y > 200:
+		Globals.respawn()
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta

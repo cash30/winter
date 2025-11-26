@@ -8,7 +8,7 @@ var levelSelectScene : PackedScene =load("res://Scenes/UI/levelSelect.tscn")
 
 var level1           : PackedScene = load("res://Scenes/levels/level1.tscn")
 var level2           : PackedScene = load("res://Scenes/levels/level2.tscn")
-var level3           : PackedScene = null
+var level3           : PackedScene = load("res://Scenes/levels/level_3.tscn")
 var level4           : PackedScene = load("res://Scenes/levels/winterTestLevel.tscn")
 var lastLevel        : PackedScene = load("res://Scenes/levels/lastLevel.tscn")
 var winterTestLevel  : PackedScene = load("res://Scenes/levels/winterTestLevel.tscn")
@@ -48,8 +48,12 @@ func nextLevel():
 		gameMode = "framework"
 		#
 	elif onScene == level2:
+		changeScene(level3)
+		gameMode = "winter"
+		
+	if onScene == level3:
 		changeScene(winterTestLevel)
 		gameMode = "winter"
-		#
-	#if onScene == level3:
-		#changeScene(level4)
+
+func respawn():
+	changeScene(onScene)
