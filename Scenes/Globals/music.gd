@@ -26,7 +26,7 @@ func _process(_delta: float) -> void:
 	elif Globals.gameMode == "winter" and currentMode != "winter":
 		stream = load("res://Music/winterMusic.mp3")
 		currentMode = "winter"
-		music_timer.wait_time = 149.0 #TODO
+		music_timer.wait_time = 149.0
 		print("changing music to winter")
 		play()
 

@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bu6sbm8dt0n77"]
+
+[ext_resource type="Script" uid="uid://b8b6dxxej0ih4" path="res://Scripts/nail.gd" id="1_mlvsk"]
+[ext_resource type="AudioStream" uid="uid://pfndttbviowo" path="res://Music/coin.mp3" id="2_dgydh"]
+[ext_resource type="Texture2D" uid="uid://bj7fv66nfqvgn" path="res://Art/hotCoco.png" id="3_ewmwh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rqh8y"]
+height = 20.0
+
+[node name="Coco" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_mlvsk")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_rqh8y")
+
+[node name="sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_dgydh")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="HotCoco" type="Sprite2D" parent="."]
+texture = ExtResource("3_ewmwh")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

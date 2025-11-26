@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://dougum7vmpkm5"]
+
+[ext_resource type="Script" uid="uid://dyq7116knxy18" path="res://Scripts/toolbox.gd" id="1_jclje"]
+[ext_resource type="Script" uid="uid://s3aoxb2n6eul" path="res://Scripts/open_toolbox.gd" id="4_1e76e"]
+[ext_resource type="Texture2D" uid="uid://r40w45g731uk" path="res://Art/tree.png" id="5_2h8i0"]
+[ext_resource type="Texture2D" uid="uid://7pllsm74awwu" path="res://Art/unlitTree.png" id="6_geloq"]
+
+[node name="Tree" type="Node2D"]
+script = ExtResource("1_jclje")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(1.5, 0.25)
+polygon = PackedVector2Array(-14.5, 2.75, -14.5, -0.25, -2.5, -28.25, -0.5, -28.25, 11.5, -0.25, 11.5, 2.75, 7.5, 9.75, -10.5, 9.75)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(-52, -1)
+polygon = PackedVector2Array(43, 10, 51, 5, 40, 4, 51, -26, 53, -26, 64, 4, 54, 5, 61, 10)
+
+[node name="UnlitTree" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(0, -9)
+texture = ExtResource("6_geloq")
+
+[node name="litTree" type="Sprite2D" parent="StaticBody2D"]
+visible = false
+position = Vector2(0, -9)
+texture = ExtResource("5_2h8i0")
+script = ExtResource("4_1e76e")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="StaticBody2D/litTree" method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

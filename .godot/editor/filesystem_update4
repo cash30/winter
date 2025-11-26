@@ -1,3 +1,5 @@
-res://Scenes/Globals/music.gd
-res://Scripts/Globals.gd
+res://Scenes/levels/lastLevel.tscn
 res://Scenes/levels/winterTestLevel.tscn
+res://Scenes/goals/tree.tscn
+res://Scenes/goals/toolbox.tscn
+res://Scenes/collectable/hotCoco.tscn

@@ -6,12 +6,12 @@
 [ext_resource type="Script" uid="uid://s3aoxb2n6eul" path="res://Scripts/open_toolbox.gd" id="4_q5d8y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8fum"]
-size = Vector2(32, 17)
+size = Vector2(29, 17.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_up8qv"]
-size = Vector2(31, 12)
+size = Vector2(18, 15)
 
-[node name="Node2D" type="Node2D"]
+[node name="Toolbox" type="Node2D"]
 script = ExtResource("1_up8qv")
 
 [node name="Area2D" type="Area2D" parent="."]
