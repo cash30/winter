@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1764193429
+::res://::1764206635
 export_presets.cfg::TextFile::-1::1764184459::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1764018529::0::1::::<><><>0<>0<><>::
 ::res://addons/::1764017951
@@ -47,36 +47,37 @@ nail.tscn::PackedScene::6213439071336435315::1764191578::0::1::::<><><>0<>0<><>:
 ::res://Scenes/Globals/::1764189317
 Globals.tscn::PackedScene::5442310031273032862::1764189317::0::1::::<><><>0<>0<><>::uid://b0r7ml1usvqxu::::res://Scripts/Globals.gd<>uid://di6gwrtosu070::::res://Scenes/Globals/music.gd<>uid://05j0ah7ukuu7::::res://Scripts/UI/sound/clink.gd<>uid://cloblulsqobeo::::res://Music/clink.mp3
 music.gd::GDScript::7785173022891124221::1764097816::0::1::::<>AudioStreamPlayer<><>0<>0<><>::
-::res://Scenes/goals/::1764191616
+::res://Scenes/goals/::1764195509
 toolbox.tscn::PackedScene::3914017552636670353::1764191616::0::1::::<><><>0<>0<><>::uid://dyq7116knxy18::::res://Scripts/goal.gd<>uid://1y52jd42xl7w::::res://Art/toolbox.png<>uid://cd4j0hx5qr76f::::res://Art/open-toolbox.png<>uid://s3aoxb2n6eul::::res://Scripts/endGoalDisplay.gd
-tree.tscn::PackedScene::8183594115612373302::1764191616::0::1::::<><><>0<>0<><>::uid://dyq7116knxy18::::res://Scripts/goal.gd<>uid://s3aoxb2n6eul::::res://Scripts/endGoalDisplay.gd<>uid://r40w45g731uk::::res://Art/tree.png<>uid://7pllsm74awwu::::res://Art/unlitTree.png
-::res://Scenes/levels/::1764190914
-lastLevel.tscn::PackedScene::5466154658935288278::1764185290::0::1::::<><><>0<>0<><>::uid://chgol7hunoese::::res://Art/tiles/tiles.png<>uid://bpfmsgfwc3q2b::::res://Scenes/Player/player.tscn<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://wavqdjomfqrh::::res://Scripts/UI/Buttons/menuButton.gd<>uid://cur3o0msomnfv::::res://Scenes/collectable/nail.tscn
-level1.tscn::PackedScene::5247497385065722394::1764185290::0::1::::<><><>0<>0<><>::uid://chgol7hunoese::::res://Art/tiles/tiles.png<>uid://bpfmsgfwc3q2b::::res://Scenes/Player/player.tscn<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://cur3o0msomnfv::::res://Scenes/collectable/nail.tscn
-level2.tscn::PackedScene::2638959734570211816::1764185290::0::1::::<><><>0<>0<><>::uid://chgol7hunoese::::res://Art/tiles/tiles.png<>uid://bpfmsgfwc3q2b::::res://Scenes/Player/player.tscn<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://cur3o0msomnfv::::res://Scenes/collectable/nail.tscn
-level_3.tscn::PackedScene::4416449962392186850::1764190914::0::1::::<><><>0<>0<><>::uid://chgol7hunoese::::res://Art/tiles/tiles.png<>uid://fos7f74ubnj1::::res://Art/tiles/winterTiles.png<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://wavqdjomfqrh::::res://Scripts/UI/Buttons/menuButton.gd<>uid://g44srrpah2wy::::res://Scenes/Player/santa.tscn<>uid://bu6sbm8dt0n77::::res://Scenes/collectable/hotCoco.tscn<>uid://dougum7vmpkm5::::res://Scenes/goals/tree.tscn
-winterTestLevel.tscn::PackedScene::8094107971820629215::1764188128::0::1::::<><><>0<>0<><>::uid://chgol7hunoese::::res://Art/tiles/tiles.png<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://fos7f74ubnj1::::res://Art/tiles/winterTiles.png<>uid://wavqdjomfqrh::::res://Scripts/UI/Buttons/menuButton.gd<>uid://g44srrpah2wy::::res://Scenes/Player/santa.tscn<>uid://bu6sbm8dt0n77::::res://Scenes/collectable/hotCoco.tscn<>uid://dougum7vmpkm5::::res://Scenes/goals/tree.tscn
+tree.tscn::PackedScene::8183594115612373302::1764195509::0::1::::<><><>0<>0<><>::uid://dyq7116knxy18::::res://Scripts/goal.gd<>uid://s3aoxb2n6eul::::res://Scripts/endGoalDisplay.gd<>uid://r40w45g731uk::::res://Art/tree.png<>uid://7pllsm74awwu::::res://Art/unlitTree.png
+::res://Scenes/levels/::1764196995
+lastLevel.tscn::PackedScene::5466154658935288278::1764194263::0::1::::<><><>0<>0<><>::uid://bbfu4j4n2tica::::res://Scenes/levels/winterTestLevel.tres<>uid://bpfmsgfwc3q2b::::res://Scenes/Player/player.tscn<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://wavqdjomfqrh::::res://Scripts/UI/Buttons/menuButton.gd<>uid://cur3o0msomnfv::::res://Scenes/collectable/nail.tscn
+level1.tscn::PackedScene::5247497385065722394::1764195044::0::1::::<><><>0<>0<><>::uid://bbfu4j4n2tica::::res://Scenes/levels/winterTestLevel.tres<>uid://bpfmsgfwc3q2b::::res://Scenes/Player/player.tscn<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://cur3o0msomnfv::::res://Scenes/collectable/nail.tscn
+level2.tscn::PackedScene::2638959734570211816::1764195088::0::1::::<><><>0<>0<><>::uid://bbfu4j4n2tica::::res://Scenes/levels/winterTestLevel.tres<>uid://bpfmsgfwc3q2b::::res://Scenes/Player/player.tscn<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://cur3o0msomnfv::::res://Scenes/collectable/nail.tscn
+level_3.tscn::PackedScene::4416449962392186850::1764196994::0::1::::<><><>0<>0<><>::uid://bbfu4j4n2tica::::res://Scenes/levels/winterTestLevel.tres<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://wavqdjomfqrh::::res://Scripts/UI/Buttons/menuButton.gd<>uid://g44srrpah2wy::::res://Scenes/Player/santa.tscn<>uid://bu6sbm8dt0n77::::res://Scenes/collectable/hotCoco.tscn<>uid://dougum7vmpkm5::::res://Scenes/goals/tree.tscn
+winterTestLevel.tres::TileSet::2468198062116980620::1764196995::0::1::::<><><>0<>0<><>::uid://chgol7hunoese::::res://Art/tiles/tiles.png<>uid://fos7f74ubnj1::::res://Art/tiles/winterTiles.png
+winterTestLevel.tscn::PackedScene::8094107971820629215::1764195343::0::1::::<><><>0<>0<><>::uid://bbfu4j4n2tica::::res://Scenes/levels/winterTestLevel.tres<>uid://bv08kdu8uu2xx::::res://Scenes/goals/toolbox.tscn<>uid://wavqdjomfqrh::::res://Scripts/UI/Buttons/menuButton.gd<>uid://g44srrpah2wy::::res://Scenes/Player/santa.tscn<>uid://bu6sbm8dt0n77::::res://Scenes/collectable/hotCoco.tscn<>uid://dougum7vmpkm5::::res://Scenes/goals/tree.tscn
 ::res://Scenes/Main/::1764017951
 Main.tscn::PackedScene::2596865854925519592::1764017951::0::1::::<><><>0<>0<><>::uid://bpfmsgfwc3q2b::::res://Scenes/Player/player.tscn
-::res://Scenes/Player/::1764191202
+::res://Scenes/Player/::1764206326
 camera.gd::GDScript::5910931913969577564::1764017951::0::1::::<>Camera2D<><>0<>0<><>::
-player.tscn::PackedScene::3450336299104866263::1764017951::0::1::::<><><>0<>0<><>::uid://bmedk7apojwu4::::res://Scripts/Player/player.gd<>uid://knumqbmhvl4d::::res://Scenes/Player/playerAnimator.gd<>uid://bv0t707lcn0qy::::res://Art/player_files/player full spritesheet.png<>uid://cqhkgj5hyx7ca::::res://Scenes/Player/camera.gd<>uid://b3locsbqy51lc::::res://Art/sun.png<>uid://b16uws4c5ugc4::::res://Scripts/Player/nailCounter.gd
+player.tscn::PackedScene::3450336299104866263::1764206326::0::1::::<><><>0<>0<><>::uid://bmedk7apojwu4::::res://Scripts/Player/player.gd<>uid://knumqbmhvl4d::::res://Scenes/Player/playerAnimator.gd<>uid://bv0t707lcn0qy::::res://Art/player_files/player full spritesheet.png<>uid://cqhkgj5hyx7ca::::res://Scenes/Player/camera.gd<>uid://b3locsbqy51lc::::res://Art/sun.png<>uid://b16uws4c5ugc4::::res://Scripts/Player/nailCounter.gd
 playerAnimator.gd::GDScript::729961959039114209::1764017951::0::1::::<>Node2D<><>0<>0<><>::
-santa.tscn::PackedScene::482793873616909384::1764191202::0::1::::<><><>0<>0<><>::uid://bmedk7apojwu4::::res://Scripts/Player/player.gd<>uid://knumqbmhvl4d::::res://Scenes/Player/playerAnimator.gd<>uid://bvryoaorhtal4::::res://Art/player_files/santa frames.png<>uid://cqhkgj5hyx7ca::::res://Scenes/Player/camera.gd<>uid://b3locsbqy51lc::::res://Art/sun.png<>uid://ccloewtbmcf8a::::res://Art/Snowflake.png
+santa.tscn::PackedScene::482793873616909384::1764196471::0::1::::<><><>0<>0<><>::uid://bmedk7apojwu4::::res://Scripts/Player/player.gd<>uid://knumqbmhvl4d::::res://Scenes/Player/playerAnimator.gd<>uid://bvryoaorhtal4::::res://Art/player_files/santa frames.png<>uid://cqhkgj5hyx7ca::::res://Scenes/Player/camera.gd<>uid://b3locsbqy51lc::::res://Art/sun.png<>uid://ccloewtbmcf8a::::res://Art/Snowflake.png
 ::res://Scenes/UI/::1764189113
 how.tscn::PackedScene::1987748344477796306::1764017951::0::1::::<><><>0<>0<><>::uid://wavqdjomfqrh::::res://Scripts/UI/Buttons/menuButton.gd
 levelSelect.tscn::PackedScene::72580550348499342::1764189113::0::1::::<><><>0<>0<><>::uid://c3dqfuxct7t4v::::res://Art/player_files/player.png<>uid://b7lclu54h57u8::::res://Art/player_files/santa.png<>uid://wavqdjomfqrh::::res://Scripts/UI/Buttons/menuButton.gd<>uid://cf0o6kw8e8ewt::::res://Scripts/UI/Buttons/playButton.gd
 pause.tscn::PackedScene::179457328078531507::1764017951::0::1::::<><><>0<>0<><>::uid://yaj5a0o3nqh3::::res://Themes/ButtonTheme.tres<>uid://cf0o6kw8e8ewt::::res://Scripts/UI/Buttons/playButton.gd
 rotate.tscn::PackedScene::173092547096809057::1764017951::0::1::::<><><>0<>0<><>::uid://b1le1176koumw::::res://Scripts/UI/titleScreenPlayerRotate.gd<>uid://c3dqfuxct7t4v::::res://Art/player_files/player.png
 Title.tscn::PackedScene::6531343137999180087::1764036145::0::1::::<><><>0<>0<><>::uid://yaj5a0o3nqh3::::res://Themes/ButtonTheme.tres<>uid://b7lclu54h57u8::::res://Art/player_files/santa.png<>uid://cf0o6kw8e8ewt::::res://Scripts/UI/Buttons/playButton.gd<>uid://dakvhyalldgwu::::res://Scripts/UI/Buttons/howButton.gd<>uid://cp32rfoo45xt::::res://Scenes/UI/rotate.tscn<>uid://b3ti2wl8p0ape::::res://Scripts/UI/Buttons/levelSelect.gd
-::res://Scripts/::1764192970
+::res://Scripts/::1764206563
 collectable.gd::GDScript::4706605729422020291::1764192970::0::1::::<>Node2D<><>0<>0<><>::
 endGoalDisplay.gd::GDScript::1321227974540135467::1764017951::0::1::::<>Sprite2D<><>0<>0<><>::
-Globals.gd::GDScript::4178201188613686058::1764191160::0::1::::<>Control<><>0<>0<><>::
+Globals.gd::GDScript::4178201188613686058::1764206563::0::1::::<>Control<><>0<>0<><>::
 goal.gd::GDScript::8878815130835790845::1764191949::0::1::::<>Node2D<><>0<>0<><>::
-::res://Scripts/Player/::1764193020
+::res://Scripts/Player/::1764197032
 nailCounter.gd::GDScript::4276580946330417785::1764017951::0::1::::<>Label<><>0<>0<><>::
-player.gd::GDScript::3237146008730901669::1764193020::0::1::::PlayerController<>CharacterBody2D<><>0<>0<><>::
+player.gd::GDScript::3237146008730901669::1764197032::0::1::::PlayerController<>CharacterBody2D<><>0<>0<><>::
 ::res://Scripts/UI/::1764036145
 titleScreenPlayerRotate.gd::GDScript::4234329488652474094::1764036145::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Scripts/UI/Buttons/::1764189230

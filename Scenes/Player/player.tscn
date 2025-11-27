@@ -80,7 +80,7 @@ _data = {
 }
 
 [node name="player" type="CharacterBody2D" groups=["player"]]
-collision_mask = 6
+collision_mask = 7
 script = ExtResource("1_a3d8c")
 
 [node name="animator" type="Node2D" parent="." node_paths=PackedStringArray("playerController", "animationPlayer", "sprite")]

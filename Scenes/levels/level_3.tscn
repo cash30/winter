@@ -45,28 +45,40 @@ script = ExtResource("4_8q1ft")
 [node name="player" parent="." instance=ExtResource("5_xrn22")]
 position = Vector2(80, -56)
 
-[node name="coco" parent="." instance=ExtResource("6_1qnut")]
-position = Vector2(128, -17)
-
-[node name="coco2" parent="." instance=ExtResource("6_1qnut")]
-position = Vector2(206, -47)
-
-[node name="coco3" parent="." instance=ExtResource("6_1qnut")]
-position = Vector2(279, -64)
-
 [node name="tree" parent="." instance=ExtResource("7_dlr6t")]
 position = Vector2(692, 14)
 
-[node name="Coco" parent="." instance=ExtResource("6_1qnut")]
-position = Vector2(378, -95)
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(-3.105, 0)
 
-[node name="Coco2" parent="." instance=ExtResource("6_1qnut")]
-position = Vector2(491, -95)
+[node name="Coco4" parent="Node2D" instance=ExtResource("6_1qnut")]
+position = Vector2(651, -127)
 
-[node name="Coco3" parent="." instance=ExtResource("6_1qnut")]
+[node name="Coco3" parent="Node2D" instance=ExtResource("6_1qnut")]
 position = Vector2(554, -111)
 
-[node name="Coco4" parent="." instance=ExtResource("6_1qnut")]
-position = Vector2(651, -127)
+[node name="Coco2" parent="Node2D" instance=ExtResource("6_1qnut")]
+position = Vector2(491, -95)
+
+[node name="Coco" parent="Node2D" instance=ExtResource("6_1qnut")]
+position = Vector2(378, -95)
+
+[node name="coco3" parent="Node2D" instance=ExtResource("6_1qnut")]
+position = Vector2(281.105, -64)
+
+[node name="coco2" parent="Node2D" instance=ExtResource("6_1qnut")]
+position = Vector2(206, -47)
+
+[node name="coco" parent="Node2D" instance=ExtResource("6_1qnut")]
+position = Vector2(128, -17)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 617.0
+offset_top = -117.00001
+offset_right = 950.0
+offset_bottom = -33.000008
+scale = Vector2(0.11, 0.11)
+theme_override_font_sizes/font_size = 61
+text = "Jump down"
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

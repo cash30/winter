@@ -11,7 +11,7 @@ func _physics_process(delta: float) -> void:
 		Globals.respawn()
 	
 	# Add the gravity.
-	if not is_on_floor() and !Input.is_action_pressed("down"):
+	if not is_on_floor():
 		velocity += get_gravity() * delta
 
 	# Handle jump.
