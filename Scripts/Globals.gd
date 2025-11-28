@@ -1,6 +1,6 @@
 extends Control
 
-var doesHaveAdminTools = true#TODO: set to false on final export
+var doesHaveAdminTools = false
 var isFlyingBecuaseAdmin = false
 
 var onScene          : PackedScene = load("res://Scenes/UI/Title.tscn")
