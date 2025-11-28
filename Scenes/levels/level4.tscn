@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dnk31m0mqkgm6"]
+[gd_scene load_steps=7 format=3 uid="uid://dnk31m0mqkgm6"]
 
 [ext_resource type="TileSet" uid="uid://bbfu4j4n2tica" path="res://Scenes/levels/winterTestLevel.tres" id="1_ofi80"]
 [ext_resource type="PackedScene" uid="uid://bv08kdu8uu2xx" path="res://Scenes/goals/toolbox.tscn" id="2_n7m84"]
 [ext_resource type="PackedScene" uid="uid://dougum7vmpkm5" path="res://Scenes/goals/tree.tscn" id="3_ia2ng"]
 [ext_resource type="PackedScene" uid="uid://g44srrpah2wy" path="res://Scenes/Player/santa.tscn" id="4_5rtj3"]
 [ext_resource type="PackedScene" uid="uid://bu6sbm8dt0n77" path="res://Scenes/collectable/hotCoco.tscn" id="5_mrlvs"]
+[ext_resource type="PackedScene" uid="uid://dpms2tgqwtutq" path="res://Scenes/elements/snowman.tscn" id="6_n7m84"]
 
 [node name="level1" type="Node2D"]
 
@@ -48,3 +49,6 @@ position = Vector2(198, 1)
 
 [node name="coco3" parent="Node2D2" instance=ExtResource("5_mrlvs")]
 position = Vector2(214, 1)
+
+[node name="Node2D" parent="." instance=ExtResource("6_n7m84")]
+position = Vector2(238, -77)

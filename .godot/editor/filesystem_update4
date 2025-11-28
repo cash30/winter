@@ -1,6 +1,6 @@
-res://Scenes/levels/lastLevel.tscn
 res://Scenes/levels/winterTestLevel.tres
-res://Scripts/Globals.gd
-res://Scripts/collectable.gd
-res://Scripts/Player/player.gd
-res://Scenes/UI/how.tscn
+res://Scenes/elements/snowman.tscn
+res://Scripts/elements/snowman.gd
+res://Scenes/levels/level4.tscn
+res://Scenes/elements/snowball.tscn
+res://Scripts/elements/snowball.gd
