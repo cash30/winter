@@ -1,0 +1,131 @@
+commit a2a5f1d0a975af6fb849aef7f53f5cb9abeaefbc
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Fri Nov 28 15:35:22 2025 -0500
+
+    idk but i did stuff trust
+
+commit 94d72cd819d8decaa498adc1d6e50e5d21ed434c
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Fri Nov 28 13:34:17 2025 -0500
+
+    add snowmen to levels :D
+
+commit ac31fbd135ee01f71f136e0302ec35c8c61d4625
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Fri Nov 28 13:23:00 2025 -0500
+
+    added SNOWMAN! yay!
+
+commit 947ab56336c9832896c97ba5e4818c04d562cdb6
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Fri Nov 28 10:42:27 2025 -0500
+
+    delete hidden toolchest and fix flying
+    
+    There was a toolchest in the last level that had gome unnoticed and broke things
+    speed wasnt reset when coming out of flying so i fixed that
+
+commit d5d4c3a8e121739b7ffa19618a31222d5379f540
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Thu Nov 27 23:40:43 2025 -0500
+
+    update README and levels
+
+commit 68a5ee585a77cb2f7deb98fef60d52902abb3509
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Thu Nov 27 22:51:15 2025 -0500
+
+    add snow ❄️
+
+commit b351e6846952e3ac7c6f9ee1ab48126acc65e9b6
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Thu Nov 27 22:09:56 2025 -0500
+
+    fix chest collision and add admin tools
+    
+    fix collision shape of toolchest: make it wider so player collision feels better
+    add admin tools: if you are an admin: press num7 to fly and num8 to go to the next level. you can set weather or not you are an admin in Globals.gd+
+
+commit c62b7fd13c1f5d0b7aec8d567de2d41eb86db536
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Thu Nov 27 21:50:48 2025 -0500
+
+    fix falling throung walls
+
+commit e5652b0e50a62c428fbc2e5a63593a1a4dd75b8a
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Wed Nov 26 20:44:40 2025 -0500
+
+    idk what i did
+
+commit c5112407cfbe69e63b70d9caa10979b1e7ff75b6
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Wed Nov 26 17:36:17 2025 -0500
+
+    add ability to go down ladders
+
+commit 0883b90ebd9017779e2e3ae8ffe7e9eb74352cd2
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Wed Nov 26 16:10:25 2025 -0500
+
+    added void death and level 3
+
+commit f36f1ab2ca2f4ef78061fa7c26f34c27ccc3f3f8
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Wed Nov 26 15:44:07 2025 -0500
+
+    fix level select scene
+
+commit 2ae938cf928db97e700ffbc37e986201e95bc4b2
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Wed Nov 26 14:43:53 2025 -0500
+
+    add hot chocolate and tree
+
+commit 2fcee5a6903a4a20faba52865badd6d437f52236
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Tue Nov 25 12:42:06 2025 -0500
+
+    added music for winter theme
+
+commit 42d8f273f5d50aab455a03edd0cdf7e2648781d6
+Author: Cameron Booth <cashjackc@gmail.com>
+Date:   Mon Nov 24 20:09:33 2025 -0500
+
+    forgot to save before last commit
+
+commit 49bd8a5e313a25e91b9c77c03a26608f2ccdb97f
+Author: Cameron Booth <cashjackc@gmail.com>
+Date:   Mon Nov 24 20:06:53 2025 -0500
+
+    added level select scene and started on music changing for winter
+
+commit bb6e3c5ed9eecf7e6a79658a21ce353e7a16e0de
+Author: Cameron Booth <cashjackc@gmail.com>
+Date:   Mon Nov 24 19:41:25 2025 -0500
+
+    fix santa animations
+
+commit 712bde6ecda92dff04f2eb3a5418e7c3a15129bf
+Author: Cameron Booth <cashjackc@gmail.com>
+Date:   Mon Nov 24 19:02:48 2025 -0500
+
+    added santa player
+
+commit d2d63d9954f7f99d2844619a5efb3b8feb747197
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Mon Nov 24 16:52:36 2025 -0500
+
+    fix things
+
+commit 93b50e6c6de823286e9af30e18faf4e2ec8fea07
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Mon Nov 24 16:10:09 2025 -0500
+
+    wow look at this cool commit message
+
+commit 821bd0a523375cfb1bfcf15101ebd0fbfbd0f19f
+Author: Cassius Crum <cashjackc@gmail.com>
+Date:   Mon Nov 24 16:08:50 2025 -0500
+
+    first commit

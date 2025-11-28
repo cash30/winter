@@ -33,7 +33,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 91
 text = "WASD/arrows/space to move.
 Collect Nails/Hot Chocolate cuz why not
-Get to the Toolbox/Tree!"
+Get to the Toolbox/Tree!
+Dont get hit by snowballs!"
 horizontal_alignment = 1
 vertical_alignment = 1
 

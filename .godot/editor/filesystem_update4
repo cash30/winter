@@ -3,3 +3,5 @@ res://Scenes/levels/winterTestLevel.tres
 res://Scripts/Player/player.gd
 res://Scenes/levels/level_3.tscn
 res://Scenes/levels/level4.tscn
+res://Scenes/UI/how.tscn
+res://README.md
