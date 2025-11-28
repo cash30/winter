@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://cj4uwinv2q1ga" path="res://Scripts/elements/snowman.gd" id="1_363gl"]
 [ext_resource type="Texture2D" uid="uid://do3u5oj0jx3gt" path="res://Art/snowman.png" id="1_xkato"]
 
-[node name="Node2D" type="Node2D"]
+[node name="snowman" type="Node2D"]
 script = ExtResource("1_363gl")
 
 [node name="Snowman" type="Sprite2D" parent="."]
