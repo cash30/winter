@@ -1,5 +1,5 @@
-res://Scenes/levels/level_3.tscn
+res://Scenes/Player/santa.tscn
 res://Scenes/levels/winterTestLevel.tres
-res://Scenes/elements/snowman.tscn
+res://Scripts/Player/player.gd
+res://Scenes/levels/level_3.tscn
 res://Scenes/levels/level4.tscn
-res://Scenes/levels/lastLevel.tscn

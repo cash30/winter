@@ -1,12 +1,22 @@
 extends CharacterBody2D
 class_name PlayerController
 
+const ICE_LAYER = 1 << 4  # Layer 4
 @export var speed= 100.0
 @export var jumpPower = -200.0
 @export var direction = 0
 @export var zoom = 3
+var isOnIce = false
+var tilemap = null
+
+
+func _ready() -> void:
+	tilemap = get_parent().get_node("TileMap")  # adjust to your TileMap node
+	print(tilemap)
+
 
 func _physics_process(delta: float) -> void:
+	
 	if position.y > 200:
 		Globals.respawn()
 	
@@ -47,4 +57,13 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
-	#ok its time for an 18 second comment
+
+
+
+#func is_on_ice(tilemap: TileMap) -> bool:
+	#var cell = tilemap.world_to_map(global_position)
+	#var tile_id = tilemap.get_cell(cell.x, cell.y)
+	#if tile_id == TileMap.INVALID_CELL:
+		#return false
+	#var meta = tilemap.tile_get_metadata(tile_id)	
+	#return meta == "ice"
