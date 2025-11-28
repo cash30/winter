@@ -11,10 +11,10 @@ func _physics_process(delta: float) -> void:
 		Globals.respawn()
 	
 	# Add the gravity.
-	if not is_on_floor():
+	if not is_on_floor() and !Globals.isFlyingBecuaseAdmin:
 		velocity += get_gravity() * delta
 
-	# Handle jump.
+
 	if Input.is_action_pressed("up") and is_on_floor():
 		velocity.y = jumpPower
 	if Input.is_action_pressed("down"):
@@ -22,7 +22,15 @@ func _physics_process(delta: float) -> void:
 	else:
 		set_collision_mask_value(3, true)
 
-		
+
+	if Globals.isFlyingBecuaseAdmin:
+		if Input.is_action_pressed("up"):
+			velocity.y = -speed
+		elif Input.is_action_pressed("down"):
+			velocity.y = speed
+		else:
+			velocity.y = 0
+	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	if Input.is_action_pressed("right"):

@@ -1,2 +1,5 @@
 res://Scenes/levels/level_3.tscn
 res://Scenes/levels/winterTestLevel.tres
+res://Scenes/goals/toolbox.tscn
+res://Scripts/Globals.gd
+res://Scripts/Player/player.gd

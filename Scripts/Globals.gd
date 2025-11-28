@@ -1,4 +1,8 @@
 extends Control
+
+var doesHaveAdminTools = true#TODO: set to false on final export
+var isFlyingBecuaseAdmin = false
+
 var onScene          : PackedScene = load("res://Scenes/UI/Title.tscn")
 
 var titleScene       : PackedScene = load("res://Scenes/UI/Title.tscn")
@@ -30,8 +34,16 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
+	if doesHaveAdminTools and Input.is_action_just_pressed("admin_nextLevel"):
+		nextLevel()
+	if doesHaveAdminTools and Input.is_action_pressed("admin_fly"):
+		isFlyingBecuaseAdmin = true
+	elif doesHaveAdminTools and Input.is_action_pressed("admin_fly"):
+		isFlyingBecuaseAdmin = false
+	
 	if Input.is_action_just_pressed("pause"):
-		get_tree()
+		pass
+		#get_tree()
 	
 	
 func changeScene(scene : PackedScene):

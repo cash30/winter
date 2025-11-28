@@ -6,10 +6,10 @@
 [ext_resource type="Script" uid="uid://s3aoxb2n6eul" path="res://Scripts/endGoalDisplay.gd" id="4_q5d8y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t8fum"]
-size = Vector2(29, 17.5)
+size = Vector2(32, 18)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_up8qv"]
-size = Vector2(18, 15)
+size = Vector2(30, 15)
 
 [node name="Toolbox" type="Node2D"]
 script = ExtResource("1_up8qv")
@@ -17,6 +17,7 @@ script = ExtResource("1_up8qv")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_t8fum")
 
 [node name="Timer" type="Timer" parent="."]
