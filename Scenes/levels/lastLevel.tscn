@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cj431er0g23ck"]
+[gd_scene load_steps=6 format=3 uid="uid://cj431er0g23ck"]
 
 [ext_resource type="TileSet" uid="uid://bbfu4j4n2tica" path="res://Scenes/levels/winterTestLevel.tres" id="1_yriw2"]
 [ext_resource type="PackedScene" uid="uid://bpfmsgfwc3q2b" path="res://Scenes/Player/player.tscn" id="2_yriw2"]
-[ext_resource type="PackedScene" uid="uid://bv08kdu8uu2xx" path="res://Scenes/goals/toolbox.tscn" id="3_j8gap"]
 [ext_resource type="Script" uid="uid://wavqdjomfqrh" path="res://Scripts/UI/Buttons/menuButton.gd" id="4_os33c"]
 [ext_resource type="PackedScene" uid="uid://cur3o0msomnfv" path="res://Scenes/collectable/nail.tscn" id="5_yriw2"]
 [ext_resource type="PackedScene" uid="uid://bu6sbm8dt0n77" path="res://Scenes/collectable/hotCoco.tscn" id="6_j8gap"]
@@ -20,10 +19,6 @@ layer_1/name = "Ladders2"
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_yriw2")]
 position = Vector2(77, -47)
 zoom = 4
-
-[node name="Chest" parent="." instance=ExtResource("3_j8gap")]
-visible = false
-position = Vector2(126, -193)
 
 [node name="explore" type="Label" parent="."]
 z_index = -1
@@ -137,7 +132,7 @@ position = Vector2(151, -210)
 position = Vector2(137, -210)
 
 [node name="Coco12" parent="coco" instance=ExtResource("6_j8gap")]
-position = Vector2(123, -200)
+position = Vector2(127, -200)
 
 [node name="Coco14" parent="coco" instance=ExtResource("6_j8gap")]
 position = Vector2(114, -171)
@@ -149,7 +144,7 @@ position = Vector2(114, -156)
 position = Vector2(114, -141)
 
 [node name="Coco13" parent="coco" instance=ExtResource("6_j8gap")]
-position = Vector2(114, -186)
+position = Vector2(120, -186)
 
 [node name="Coco17" parent="coco" instance=ExtResource("6_j8gap")]
 position = Vector2(114, -126)

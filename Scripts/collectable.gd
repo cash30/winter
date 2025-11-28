@@ -21,7 +21,9 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		$sound.play()
 		Globals.nailsCollected += 1
 		hide()
-		$Area2D.monitorable = false
+		$Area2D.set_deferred("monitorable", false)
+
+
 
 
 func _on_timer_timeout() -> void:

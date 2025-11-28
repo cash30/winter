@@ -29,10 +29,10 @@ func _physics_process(delta: float) -> void:
 			velocity.y = -speed
 		elif Input.is_action_pressed("down"):
 			velocity.y = speed
-			speed = 100
 		else:
 			velocity.y = 0
-	
+	else:
+		speed = 100
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	if Input.is_action_pressed("right"):
@@ -47,3 +47,4 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
+	#ok its time for an 18 second comment

@@ -13,7 +13,7 @@ var levelSelectScene : PackedScene =load("res://Scenes/UI/levelSelect.tscn")
 var level1           : PackedScene = load("res://Scenes/levels/level1.tscn")
 var level2           : PackedScene = load("res://Scenes/levels/level2.tscn")
 var level3           : PackedScene = load("res://Scenes/levels/level_3.tscn")
-var level4           : PackedScene = load("res://Scenes/levels/winterTestLevel.tscn")
+var level4           : PackedScene = load("res://Scenes/levels/level4.tscn")
 var lastLevel        : PackedScene = load("res://Scenes/levels/lastLevel.tscn")
 var winterTestLevel  : PackedScene = load("res://Scenes/levels/winterTestLevel.tscn")
 
