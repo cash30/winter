@@ -3,3 +3,4 @@ res://Scenes/levels/winterTestLevel.tres
 res://Scenes/goals/toolbox.tscn
 res://Scripts/Globals.gd
 res://Scripts/Player/player.gd
+res://Scenes/Player/santa.tscn

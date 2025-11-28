@@ -36,9 +36,9 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if doesHaveAdminTools and Input.is_action_just_pressed("admin_nextLevel"):
 		nextLevel()
-	if doesHaveAdminTools and Input.is_action_pressed("admin_fly"):
+	if doesHaveAdminTools and Input.is_action_pressed("admin_fly") and !isFlyingBecuaseAdmin:
 		isFlyingBecuaseAdmin = true
-	elif doesHaveAdminTools and Input.is_action_pressed("admin_fly"):
+	elif isFlyingBecuaseAdmin and Input.is_action_pressed("admin_fly"):
 		isFlyingBecuaseAdmin = false
 	
 	if Input.is_action_just_pressed("pause"):

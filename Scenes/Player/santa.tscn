@@ -89,6 +89,11 @@ height = 20.0
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ayatt"]
 particle_flag_disable_z = true
+emission_shape_scale = Vector3(720, 1, 1)
+emission_shape = 3
+emission_box_extents = Vector3(1, 1, 1)
+angular_velocity_min = -45.000015
+angular_velocity_max = -1.6093254e-05
 gravity = Vector3(0, 20, 0)
 scale_min = 0.099999994
 scale_max = 0.5
@@ -111,6 +116,7 @@ libraries = {
 autoplay = "idle"
 
 [node name="sprite" type="Sprite2D" parent="animator"]
+z_index = 1
 scale = Vector2(6, 6)
 texture = ExtResource("3_ayatt")
 region_enabled = true
@@ -139,6 +145,9 @@ rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_x7y6o")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-position = Vector2(-4, -382)
+position = Vector2(0, -199)
+amount = 1100
 texture = ExtResource("6_pa4yq")
+lifetime = 12.69
+speed_scale = 0.74
 process_material = SubResource("ParticleProcessMaterial_ayatt")
