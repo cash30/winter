@@ -1,6 +1,7 @@
-res://Scenes/levels/level_3.tscn
+res://Scenes/levels/winterTestLevel.tscn
 res://Scenes/levels/winterTestLevel.tres
-res://Scenes/goals/toolbox.tscn
+res://README.md
 res://Scripts/Globals.gd
+res://Scenes/levels/lastLevel.tscn
 res://Scripts/Player/player.gd
-res://Scenes/Player/santa.tscn
+res://Scenes/levels/level4.tscn

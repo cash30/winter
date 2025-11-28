@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://g44srrpah2wy"]
+[gd_scene load_steps=16 format=3 uid="uid://g44srrpah2wy"]
 
 [ext_resource type="Script" uid="uid://bmedk7apojwu4" path="res://Scripts/Player/player.gd" id="1_arek5"]
 [ext_resource type="Script" uid="uid://knumqbmhvl4d" path="res://Scenes/Player/playerAnimator.gd" id="2_pa4yq"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://cqhkgj5hyx7ca" path="res://Scenes/Player/camera.gd" id="4_h53ec"]
 [ext_resource type="Texture2D" uid="uid://b3locsbqy51lc" path="res://Art/sun.png" id="5_rlqqh"]
 [ext_resource type="Texture2D" uid="uid://ccloewtbmcf8a" path="res://Art/Snowflake.png" id="6_pa4yq"]
+[ext_resource type="Script" uid="uid://c077034j7dnr" path="res://Scripts/Player/snow.gd" id="7_ayatt"]
 
 [sub_resource type="Animation" id="Animation_jlvik"]
 length = 0.001
@@ -145,9 +146,11 @@ rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_x7y6o")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+visible = false
 position = Vector2(0, -199)
 amount = 1100
 texture = ExtResource("6_pa4yq")
 lifetime = 12.69
 speed_scale = 0.74
 process_material = SubResource("ParticleProcessMaterial_ayatt")
+script = ExtResource("7_ayatt")

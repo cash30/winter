@@ -1,8 +1,8 @@
 extends CharacterBody2D
 class_name PlayerController
 
-const speed= 100.0
-const jumpPower = -200.0
+@export var speed= 100.0
+@export var jumpPower = -200.0
 @export var direction = 0
 @export var zoom = 3
 
@@ -24,10 +24,12 @@ func _physics_process(delta: float) -> void:
 
 
 	if Globals.isFlyingBecuaseAdmin:
+		speed = 300
 		if Input.is_action_pressed("up"):
 			velocity.y = -speed
 		elif Input.is_action_pressed("down"):
 			velocity.y = speed
+			speed = 100
 		else:
 			velocity.y = 0
 	

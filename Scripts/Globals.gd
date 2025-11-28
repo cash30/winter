@@ -66,6 +66,9 @@ func nextLevel():
 	elif onScene == level3:
 		changeScene(level4)
 		gameMode = "winter"
+		
+	elif onScene == level4:
+		changeScene(lastLevel)
 
 func respawn():
 	changeScene(onScene)
